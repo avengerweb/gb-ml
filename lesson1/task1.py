@@ -1,3 +1,4 @@
+# Diagram: https://drive.google.com/file/d/1a9kCYcswKoV5ZW6rqUBEVIYrCGIcYt6d/view
 # No validation required (good user)
 number = int(input("Input three-digit number: "))
 
