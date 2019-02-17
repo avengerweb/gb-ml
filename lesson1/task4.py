@@ -23,8 +23,8 @@ print("Result: %f" % result)
 
 print("Random LETTER (a-z)")
 
-range_start = str(input("Range start: "))
-range_end = str(input("Range end: "))
+range_start = input("Range start: ")
+range_end = input("Range end: ")
 
 # convert to int
 range_start = ord(range_start)
