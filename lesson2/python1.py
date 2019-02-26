@@ -19,9 +19,6 @@ while True:
     elif action == "*":
         action = operator.mul
     else:
-        action = None
-
-    if action is None:
         continue
 
     num1 = int(input("Enter first number: "))
