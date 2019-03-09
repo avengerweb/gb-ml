@@ -1,6 +1,7 @@
 import sys
 import random
 import inspect
+import platform
 
 
 def show_size(x, level=0):
@@ -30,6 +31,11 @@ def show_size(x, level=0):
 
 
 show_size.app_allocated_size = 0
+
+
+def usage_report():
+    print('\n' * 2, f'App was allocated: {show_size.app_allocated_size}', sep='')
+    print(f'OS: {platform.platform()} ({platform.machine()}), Python: {platform.python_version()}')
 
 
 # 2. Во втором массиве сохранить индексы четных элементов первого массива. Например, если дан массив со значениями 8,
@@ -89,5 +95,5 @@ print("*" * 140, "\n")
 
 l3_p4()
 
-print('\n' * 2, f'App was allocated: {show_size.app_allocated_size}', sep='')
+usage_report()
 
